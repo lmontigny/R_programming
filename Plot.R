@@ -26,3 +26,16 @@ cor(Age, Height)
 plot(Age, Height)
 abline(lm(Height~Age))
 lines(smooth.spline(Age, Height), lty=2, lw=5)
+                
+# Improve plot
+plot(Age, Height, main="Title", cex=0.5, font.main=4, col=5, col.axis=3) #col=color
+text(x=5, y=11, label="text", adj=0, cex=0.5, col=1, font=4)
+abline(h=mean(LungCap), col=2, lwd=2)
+                
+# Subplot
+par(mfrow=c(1,2))
+plot(Age, Height, cex=0.5)
+plot(Age, Height, cex=0.5)
+                
+
+               
