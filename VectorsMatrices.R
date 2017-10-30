@@ -14,7 +14,15 @@ poker_vector[c("Monday","Tuesday")]
 mat = matrix(c(1,2,3,4), nrow=2, byrow=TRUE)
 mat[1,2]
 mat[2,]
+my_matrix[,1] selects all elements of the first column.
+my_matrix[1,] selects all elements of the first row.
 
+region <- c("US", "non-US")
+colnames(star_wars_matrix) = region
+worldwide_vector <- rowSums(star_wars_matrix)
+
+all_wars_matrix <- cbind(star_wars_matrix, worldwide_vector)
+all_wars_matrix <- rbind(star_wars_matrix, star_wars_matrix2)
 
 // Sequence
 2:7
